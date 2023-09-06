@@ -1,0 +1,39 @@
+.wrap {
+  position: fixed;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  background: rgba(0, 0, 0, 0.5);
+  z-index: 100;
+}
+.container {
+  /* 모달창 크기 */
+  width: 452px;
+  height: 252px;
+
+  padding: 24px;
+
+  /* 최상단 위치 */
+  z-index: 101;
+  /* 중앙 배치 */
+  /* top, bottom, left, right 는 브라우저 기준으로 작동한다. */
+  /* translate는 본인의 크기 기준으로 작동한다. */
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+
+  /* 모달창 디자인 */
+  background-color: white;
+  border: none;
+  border-radius: 8px;
+}
+
+/* 모달창 내부 버튼 */
+
+.buttons {
+  position: absolute;
+  right: 10px;
+  bottom: 10px;
+}
