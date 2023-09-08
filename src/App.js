@@ -36,11 +36,13 @@ function App() {
     prompt('너무 쉬운데요?');
   };
   const OnSaveButton = () => {
-    if ((name === '') & (price === 0)) {
+    if (name === '' || price === 0) {
       alert('값을 입력해주세요.');
     } else {
       alert(`{name: ${name}, price: ${+price.replaceAll(',', '')}}`);
     }
+    setName('');
+    setPrice(0);
   };
 
   const showLeftModal = () => {
